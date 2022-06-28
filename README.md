@@ -9,12 +9,12 @@ Cloning the repo:
 ```
 git clone https://github.com/Keyj33k/IPSweep.git
 ```
-- 1 . Navigate to the IPSweep directory.
-- 2 . Now you can run IPSweep:
+- 1 ) Navigate to the IPSweep directory.
+- 2 ) Now you can run IPSweep:
 ```
 python3 ipsweep.py 
 ```
-- 3 . You need to enter a ipv4 address, the start range and the maximum range.
+- 3 ) You need to enter a ipv4 address, the start range and the maximum range.
 ### After successfully configure IPSweep, the scan will show you all hosts and their status.
 
 ---
