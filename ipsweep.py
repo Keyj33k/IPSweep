@@ -60,7 +60,8 @@ class IPv4Sweep:
             except CalledProcessError:
                 print(
                     f"\033[0;37m[\033[0;31m-\033[0;37m] Host",
-                    f"{remove_last_octet + str(icmp_request)} is not reachable")
+                    f"{remove_last_octet + str(icmp_request)} is not reachable"
+                )
 
 
 if __name__ == "__main__":
