@@ -7,7 +7,7 @@ from sys import exit
 import os
 
 
-class ICMPSweep:
+class IPv4Sweep:
 
     def __init__(
             self,
@@ -83,7 +83,7 @@ if __name__ == "__main__":
             "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
             "last range \033[0;34m->\033[0;37m "
         ))
-        icmp_sweep = ICMPSweep(
+        icmp_sweep = IPv4Sweep(
             ipv4_addr,
             last_range,
             start_range
