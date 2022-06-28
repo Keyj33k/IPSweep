@@ -6,6 +6,15 @@ from datetime import datetime
 from sys import exit
 import os
 
+# # # # # # # # # # # # # # # # # # # # # #
+#                                         #
+#   Author  :   Keyjeek                   #
+#   Contact :   nomotikag33n@gmail.com    #
+#   Github  :   @Keyj33k                  #
+#   Version :   0.0.1                     #
+#                                         #
+# # # # # # # # # # # # # # # # # # # # # #
+
 
 class IPv4Sweep:
 
