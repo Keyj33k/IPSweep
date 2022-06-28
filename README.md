@@ -14,7 +14,8 @@ git clone https://github.com/Keyj33k/IPSweep.git
 ```
 python3 ipsweep.py 
 ```
-- 3 . You need to enter a ipv4 address, the start range and the maximum range.'''After successfully configurate ipsweep, the scan will show you all scanned hosts and their status.'''
+- 3 . You need to enter a ipv4 address, the start range and the maximum range.
+### After successfully configurate ipsweep, the scan will show you all scanned hosts and their status.
 
 ---
 ![pypy](https://raw.githubusercontent.com/Keyj33k/profiles/main/profile/pypy.jpeg)
