@@ -2,6 +2,7 @@
 
 from subprocess import CalledProcessError
 from subprocess import check_output
+from pyfiglet import figlet_format
 from datetime import datetime
 from sys import exit
 import os
@@ -74,50 +75,67 @@ class IPv4Sweep:
 
 
 if __name__ == "__main__":
+    print(figlet_format(
+        "ipv4sweep",
+        "bulbhead"
+    ))
     print(
         "\033[0;37m[\033[0;33m*\033[0;37m] Welcome to",
         "IPv4 Sweep! \033[0;34m|\033[0;37m Version 0.0.1"
     )
     print("\033[0;34m=" * 50)
 
-    try:
-        ipv4_addr = str(input(
-            "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
-            "IPv4 address \033[0;34m->\033[0;37m "
-        ))
-        start_range = int(input(
-            "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
-            "start range \033[0;34m->\033[0;37m "
-        ))
-        last_range = int(input(
-            "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
-            "last range \033[0;34m->\033[0;37m "
-        ))
-        icmp_sweep = IPv4Sweep(
-            ipv4_addr,
-            last_range,
-            start_range
-        )
-        scan_start = datetime.now()
+    while True:
+        try:
+            ipv4_addr = str(input(
+                "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
+                "IPv4 address \033[0;34m->\033[0;37m "
+            ))
 
-        print(f"\n\033[0;37m[\033[0;32m+\033[0;37m] Start scanning at {scan_start}")
-        print("\033[0;34m=" * 50)
+            if ipv4_addr == 'x' or ipv4_addr == 'exit':
+                exit(0)
 
-        icmp_sweep.create_output_file()
-        icmp_sweep.get_status()
+            start_range = int(input(
+                "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
+                "start range \033[0;34m->\033[0;37m "
+            ))
 
-        print("\033[0;34m=" * 50)
-        print(
-            f"\033[0;37m[\033[0;32m+\033[0;37m] IPv4 Sweep",
-            f"done in {datetime.now() - scan_start}"
-        )
+            if start_range == 0:
+                exit(0)
 
-    except KeyboardInterrupt:
-        print("\n\033[0;37m[\033[0;31m-\033[0;37m] Ctrl+C pressed.INTERRUPTED!")
+            last_range = int(input(
+                "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
+                "last range \033[0;34m->\033[0;37m "
+            ))
 
-    except ValueError:
-        print("\033[0;37m[\033[0;31m-\033[0;37m] Invalid input!")
+            if last_range == 0:
+                exit(0)
 
-    except IndexError:
-        print("\033[0;37m[\033[0;31m-\033[0;37m] Invalid input!")
+            icmp_sweep = IPv4Sweep(
+                ipv4_addr,
+                last_range,
+                start_range
+            )
+            scan_start = datetime.now()
 
+            print(f"\n\033[0;37m[\033[0;32m+\033[0;37m] Start scanning at {scan_start}")
+            print("\033[0;34m=" * 50)
+
+            icmp_sweep.create_output_file()
+            icmp_sweep.get_status()
+
+            print("\033[0;34m=" * 50)
+            print(
+                f"\033[0;37m[\033[0;32m+\033[0;37m] IPv4 Sweep",
+                f"done in {datetime.now() - scan_start}"
+            )
+
+        except KeyboardInterrupt:
+            print("\n\033[0;37m[\033[0;31m-\033[0;37m] Ctrl+C pressed.INTERRUPTED!")
+            exit(1)
+
+        except ValueError:
+            print("\033[0;37m[\033[0;31m-\033[0;37m] Invalid input!")
+
+        except IndexError:
+            print("\033[0;37m[\033[0;31m-\033[0;37m] Invalid input!")
