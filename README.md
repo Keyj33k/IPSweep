@@ -17,11 +17,6 @@ python3 ipsweep.py
 - 3 ) You need to enter a ipv4 address, the start range and the maximum range.<br>
 After successfully configure IPSweep, the scan will show you all hosts and their status.
 
-### How to exit IPSweep? 
----
-Option 1: Simply use Ctrl+C<br>
-Option 2: Use 'x' while string input and '0' while integer input, otherwise you will get an error.
-
 ---
 ![pypy](https://raw.githubusercontent.com/Keyj33k/profiles/main/profile/pypy.jpeg)
 ---
