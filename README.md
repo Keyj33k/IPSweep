@@ -19,8 +19,8 @@ python3 ipsweep.py
 
 How to exit IPSweep?
 ---
-There are many ways to exit IPSweep:
-Option 1: Simply use Ctrl+C
+There are many ways to exit IPSweep:<br>
+Option 1: Simply use Ctrl+C<br>
 Option 2: Use 'x' while string input and '0' while integer input, otherwise you will get an error.
 
 ---
