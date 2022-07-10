@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 
-from subprocess import CalledProcessError
-from subprocess import check_output
-from pyfiglet import figlet_format
-from datetime import datetime
-from sys import exit
-import os
+try:
+    from subprocess import CalledProcessError
+    from subprocess import check_output
+    from pyfiglet import figlet_format
+    from datetime import datetime
+    from sys import exit
+    import os
+    
+except ImportError:
+    raise RuntimeError("Important modules are missing!\nTry 'pip install -r requirements.txt'")
 
 # # # # # # # # # # # # # # # # # # # # # #
 #                                         #
