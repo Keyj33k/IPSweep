@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
             print("\033[0;34m=" * 65)
             print(
-                f"\033[0;37m[\033[0;32m+\033[0;37m] IPv4 Sweep",
+                f"\033[0;37m[\033[0;32m+\033[0;37m] IPSweep",
                 f"done in {datetime.now() - scan_start}"
             )
         except KeyboardInterrupt:
