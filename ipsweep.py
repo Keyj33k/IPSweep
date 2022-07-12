@@ -36,9 +36,8 @@ class IPv4Sweep:
     @staticmethod
     def create_output_file():
         try:
-            if not os.path.isfile("icmp_sweep_output.txt"):
-                open("icmp_sweep_output.txt", "w")
-
+            if not os.path.isfile("ipsweep_output.txt"):
+                open("ipsweep_output.txt", "w")
         except Exception as excerr:
             print(excerr)
             exit(1)
@@ -64,13 +63,11 @@ class IPv4Sweep:
                     f"{remove_last_octet + str(icmp_request)} is reachable"
                 )
 
-                with open(f"icmp_sweep_output.txt", "a") as logf:
+                with open(f"ipsweep_output.txt", "a") as logf:
                     logf.write(f"Host {remove_last_octet + str(icmp_request)} is reachable\n")
-
             except KeyboardInterrupt:
                 print("\033[0;37m[\033[0;31m-\033[0;37m] You pressed Ctrl+C.INTERRUPTED!")
                 exit(1)
-
             except CalledProcessError:
                 print(
                     f"\033[0;37m[\033[0;31m-\033[0;37m] Host",
@@ -80,14 +77,14 @@ class IPv4Sweep:
 
 if __name__ == "__main__":
     print(figlet_format(
-        "ipv4sweep",
-        "bulbhead"
+        "ipsweep",
+        "epic"
     ))
     print(
         "\033[0;37m[\033[0;33m*\033[0;37m] Welcome to",
-        "IPv4 Sweep! \033[0;34m|\033[0;37m Version 0.0.1"
+        "IPSweep! \033[0;34m|\033[0;37m Version 0.0.1"
     )
-    print("\033[0;34m=" * 50)
+    print("\033[0;34m=" * 65)
 
     while True:
         try:
@@ -95,7 +92,6 @@ if __name__ == "__main__":
                 "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
                 "IPv4 address \033[0;34m->\033[0;37m "
             ))
-
             if ipv4_addr == 'x' or ipv4_addr == 'exit':
                 exit(0)
 
@@ -103,7 +99,6 @@ if __name__ == "__main__":
                 "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
                 "start range \033[0;34m->\033[0;37m "
             ))
-
             if start_range == 0:
                 exit(0)
 
@@ -111,7 +106,6 @@ if __name__ == "__main__":
                 "\033[0;37m[\033[0;33m*\033[0;37m] Enter the " +
                 "last range \033[0;34m->\033[0;37m "
             ))
-
             if last_range == 0:
                 exit(0)
 
@@ -123,23 +117,20 @@ if __name__ == "__main__":
             scan_start = datetime.now()
 
             print(f"\n\033[0;37m[\033[0;32m+\033[0;37m] Start scanning at {scan_start}")
-            print("\033[0;34m=" * 50)
+            print("\033[0;34m=" * 65)
 
             icmp_sweep.create_output_file()
             icmp_sweep.get_status()
 
-            print("\033[0;34m=" * 50)
+            print("\033[0;34m=" * 65)
             print(
                 f"\033[0;37m[\033[0;32m+\033[0;37m] IPv4 Sweep",
                 f"done in {datetime.now() - scan_start}"
             )
-
         except KeyboardInterrupt:
             print("\n\033[0;37m[\033[0;31m-\033[0;37m] Ctrl+C pressed.INTERRUPTED!")
             exit(1)
-
         except ValueError:
             print("\033[0;37m[\033[0;31m-\033[0;37m] Invalid input!")
-
         except IndexError:
             print("\033[0;37m[\033[0;31m-\033[0;37m] Invalid input!")
