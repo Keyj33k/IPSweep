@@ -33,7 +33,7 @@ python3 ipsweep.py
 ```
 
 # :movie_camera: IPSweep in action:
-<img src="https://github.com/Keyj33k/IPSweep/blob/main/img/ipsdem.gif?raw=true"/>
+<img src="https://github.com/Keyj33k/IPSweep/blob/main/img/ipsdemo.gif?raw=true"/>
 
 ---
   
