@@ -10,7 +10,7 @@
 
 ![banner](https://github.com/Keyj33k/IPSweep/blob/main/img/ipsban.png?raw=true)
 
-# Getting started:
+# :rocket: Getting started:
 
 Cloning the repo:
 ```
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 python3 ipsweep.py 
 ```
 
-# IPSweep in action:
+# :movie_camera: IPSweep in action:
 <img src="https://github.com/Keyj33k/IPSweep/blob/main/img/ipsdem.gif?raw=true"/>
 
 ---
