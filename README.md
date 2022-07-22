@@ -1,28 +1,38 @@
-# IPSweep:snake: | Written In <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python Badge"/></a>
+![version](https://img.shields.io/badge/Version-0.0.3-informational?style=flat&logo=&logoColor=white&color=red) ![stars](https://img.shields.io/github/stars/Keyj33k/IPSweep?style=social) ![forks](https://img.shields.io/github/forks/Keyj33k/IPSweep?label=Forks&logo=&logoColor=white&color=blue) ![languages](https://img.shields.io/github/languages/count/Keyj33k/IPSweep?style=social&logo=&logoColor=white&color=blue) ![issues](https://img.shields.io/github/last-commit/Keyj33k/IPSweep?style=flat&logo=&logoColor=white&color=blue) ![platform](https://img.shields.io/badge/Platform-Linux-informational?style=flat&logo=&logoColor=white&color=green) 
+
+# IPSweep:snake: 
 
 - Scan a range of IPv4 addresses to check if a host is live or not.
 
-USAGE of IPSWEEP:
--------------------------------------------------------------------
+# Getting started:
 
 Cloning the repo:
 ```
 git clone https://github.com/Keyj33k/IPSweep.git
 ```
+
 - 1 ) Navigate to the IPSweep directory.
-- 2 ) Now you can run IPSweep:
+```
+cd IPSweep
+```
+
+- 2 ) You need to install the requirements:
+```
+pip install -r requirements.txt
+```
+
+- 3 ) Now you can run IPSweep:
 ```
 python3 ipsweep.py 
 ```
-- 3 ) You need to enter a ipv4 address, the start range and the maximum range.<br>
-### After successfully configure IPSweep, the scan will show you all hosts and their status.
+
+# IPSweep in action:
+<img src="https://github.com/Keyj33k/IPSweep/blob/main/img/ipsdem.gif?raw=true"/>
 
 ---
-![pypy](https://raw.githubusercontent.com/Keyj33k/profiles/main/profile/pypy.jpeg)
----
----
   
-- Tested on 5.17.0-kali3-amd64, 5.15.0-40-generic-Ubuntu
+- Tested on 5.18.0-kali3-amd64, 5.15.0-41-generic-Ubuntu
   
 ---
+
 
