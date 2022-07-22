@@ -76,7 +76,7 @@ if __name__ == "__main__":
         icmp_sweep.get_status()
 
         print(f"{b}=" * 48)
-        print(f"{w}[{y}*{w}] IPv4 Sweep done in {datetime.now() - scan_start}\n")
+        print(f"{w}[{y}*{w}] IPSweep done in {datetime.now() - scan_start}\n")
     except KeyboardInterrupt:
         print(f"\n{w}[{r}-{w}] Ctrl+C pressed.INTERRUPTED!")
         exit(1)
