@@ -1,3 +1,4 @@
 # Use 'pip install -r requirements' for the installation
 
 pyfiglet==0.8.post1 
+termcolor==1.1.0 
