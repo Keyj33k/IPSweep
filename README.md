@@ -12,22 +12,22 @@
 
 # :rocket: Getting started:
 
-Cloning the repo:
+- 1 ) Cloning the repo:
 ```
 git clone https://github.com/Keyj33k/IPSweep.git
 ```
 
-- 1 ) Navigate to the IPSweep directory.
+- 2 ) Navigate to the IPSweep directory.
 ```
 cd IPSweep
 ```
 
-- 2 ) You need to install the requirements:
+- 3 ) You need to install the requirements:
 ```
 pip install -r requirements.txt
 ```
 
-- 3 ) Now you can run IPSweep:
+- 4 ) Now you can run IPSweep:
 ```
 python3 ipsweep.py 
 ```
