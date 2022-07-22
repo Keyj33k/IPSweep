@@ -15,7 +15,7 @@ except ImportError:
 #   Author  :   Keyjeek                   #
 #   Contact :   nomotikag33n@gmail.com    #
 #   Github  :   @Keyj33k                  #
-#   Version :   0.0.3                     #
+#   Version :   0.0.4                     #
 #                                         #
 # # # # # # # # # # # # # # # # # # # # # #
 
