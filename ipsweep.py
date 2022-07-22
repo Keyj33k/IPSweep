@@ -27,7 +27,7 @@ except ImportError:
 #   Author  :   Keyjeek                   #
 #   Contact :   nomotikag33n@gmail.com    #
 #   Github  :   @Keyj33k                  #
-#   Version :   0.0.3                     #
+#   Version :   0.0.4                     #
 #                                         #
 # # # # # # # # # # # # # # # # # # # # # #
 
@@ -40,7 +40,7 @@ r = "\033[0;31m"
 
 if __name__ == "__main__":
     print(figlet_format("IPSweep"))
-    print(f"{w}[{y}*{w}] Welcome to IPSweep! {b}|{w} Version 0.0.3")
+    print(f"{w}[{y}*{w}] Welcome to IPSweep! {b}|{w} Version 0.0.4")
     print(f"{b}=" * 48)
 
     try:
