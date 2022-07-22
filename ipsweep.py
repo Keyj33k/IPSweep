@@ -89,7 +89,7 @@ class IPv4Sweep:
 
 if __name__ == "__main__":
     print(figlet_format("IPSweep"))
-    print(f"{w}[{y}*{w}] Welcome to IPSweep! {b}|{w} Version 0.0.1")
+    print(f"{w}[{y}*{w}] Welcome to IPSweep! {b}|{w} Version 0.0.3")
     print(f"{b}=" * 48)
 
     try:
