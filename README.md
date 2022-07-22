@@ -8,7 +8,7 @@
 
 ---
 
-![banner](https://github.com/Keyj33k/IPSweep/blob/main/img/ipswban.png?raw=true)
+![banner](https://github.com/Keyj33k/IPSweep/blob/main/img/ipsban.png?raw=true)
 
 # Getting started:
 
