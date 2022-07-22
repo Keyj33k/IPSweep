@@ -32,8 +32,10 @@ class IPv4Sweep:
             self,
             ipv4_address: str,
             max_range: int,
-            min_range: int
+            min_range: int,
+            ping_count: str
     ):
+        self.ping_count = ping_count
         self.min_range = min_range
         self.max_range = max_range
         self.ipv4_address = ipv4_address
@@ -59,7 +61,7 @@ class IPv4Sweep:
         ):
             try:
                 check_output([
-                    "ping", "-c", "2",
+                    "ping", "-c", self.ping_count,
                     remove_last_octet + str(icmp_request)
                 ])
 
