@@ -40,8 +40,8 @@ r = "\033[0;31m"
 
 
 if __name__ == "__main__":
-    print(colored(figlet_format("IPSweep"), "green"))
-    print(f"{w}[{y}*{w}] Welcome to IPSweep! {b}|{w} Version 0.0.4")
+    print(colored(figlet_format("OVAX"), "green"))
+    print(f"{w}[{y}*{w}] Welcome to Ovax! {b}|{w} Version 0.0.4")
     print(f"{b}=" * 48)
 
     try:
