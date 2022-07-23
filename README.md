@@ -33,7 +33,7 @@ python3 ovax.py
 ```
 
 # :movie_camera: Ovax in action:
-<img src="https://github.com/Keyj33k/Ovax/blob/main/img/ovaxdemo.gif?raw=true"/>
+<img src="https://github.com/Keyj33k/Ovax/blob/main/img/ovaxexmp.gif?raw=true"/>
 
 ---
   
