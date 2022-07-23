@@ -8,7 +8,7 @@
 
 ---
 
-![banner](https://github.com/Keyj33k/IPSweep/blob/main/img/ipsban.png?raw=true)
+![banner](https://github.com/Keyj33k/IPSweep/blob/main/img/ovax.png?raw=true)
 
 # :rocket: Getting started:
 
