@@ -78,7 +78,7 @@ if __name__ == "__main__":
         print(f"{b}=" * 55)
         print(f"{w}[{y}*{w}] Ovax done in {datetime.now() - scan_start}\n")
     except KeyboardInterrupt:
-        print(f"\n{w}[{r}-{w}] Ctrl+C pressed.INTERRUPTED!")
+        print(f"\n{w}[{r}-{w}] Ctrl+C pressed, Exit Ovax.")
         exit(1)
     except ValueError:
         print(f"{w}[{r}-{w}] Invalid input!")
