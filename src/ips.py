@@ -70,7 +70,7 @@ class IPv4Sweep:
                 with open(f"ipsweep_output.txt", "a") as logf:
                     logf.write(f"Host {remove_last_octet + str(icmp_request)} is reachable\n")
             except KeyboardInterrupt:
-                print(f"{w}[{r}-{w}] You pressed Ctrl+C.INTERRUPTED!")
+                print(f"{w}[{r}-{w}] You pressed Ctrl+C, Exit Ovax.")
                 exit(1)
             except CalledProcessError:
                 print(f"{w}[{r}-{w}] Host {remove_last_octet + str(icmp_request)} is not reachable")
