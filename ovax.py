@@ -40,9 +40,9 @@ r = "\033[0;31m"
 
 
 if __name__ == "__main__":
-    print(colored(figlet_format("OVAX"), "green"))
+    print(colored(figlet_format("OVAX", font="isometric1"), "green"))
     print(f"{w}[{y}*{w}] Welcome to Ovax! {b}|{w} Version 0.0.4")
-    print(f"{b}=" * 48)
+    print(f"{b}=" * 55)
 
     try:
         ipv4_addr = str(input(f"{w}[{y}*{w}] Enter the IPv4 address {b}->{w} "))
@@ -70,12 +70,12 @@ if __name__ == "__main__":
         scan_start = datetime.now()
 
         print(f"\n{w}[{y}*{w}] Start scanning at {scan_start}")
-        print(f"{b}=" * 48)
+        print(f"{b}=" * 55)
 
         icmp_sweep.create_output_file()
         icmp_sweep.get_status()
 
-        print(f"{b}=" * 48)
+        print(f"{b}=" * 55)
         print(f"{w}[{y}*{w}] IPSweep done in {datetime.now() - scan_start}\n")
     except KeyboardInterrupt:
         print(f"\n{w}[{r}-{w}] Ctrl+C pressed.INTERRUPTED!")
